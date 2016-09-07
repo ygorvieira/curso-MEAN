@@ -8,5 +8,6 @@ module.exports = function(app) {
 
   app.route('/v1/fotos/:id')
     .get(api.buscaPorId)
-    .delete(api.removePorId);
+    .delete(api.removePorId)
+    .put(api.atualiza);
 };

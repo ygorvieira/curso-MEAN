@@ -1,7 +1,7 @@
 <h1 class="text-center">Login</h1>
 
 <p class="alert-danger">{{mensagem}}</p>
-<form>
+<form ng-submit="autenticar()">
   <div class="form-group">
     <label>Login</label>
     <input type="text" class="form-control" ng-model="usuario.login">
